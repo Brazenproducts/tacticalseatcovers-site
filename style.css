@@ -571,3 +571,119 @@ img { max-width: 100%; height: auto; border-radius: var(--radius); }
 .review-compact-summary .compact-stars {
   color: #F59E0B;
 }
+
+/* ═══════════════════════════════════════════════
+   BARTACT HOUSE BRAND — Featured styles
+   ═══════════════════════════════════════════════ */
+
+/* Primary Bartact CTA button — distinct from Amazon green */
+.btn-bartact {
+  display: inline-block;
+  background: #2d6a2d;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  padding: .85em 2.4em;
+  border-radius: var(--radius);
+  transition: background .2s, transform .15s, box-shadow .2s;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 14px rgba(45,106,45,.4);
+  text-decoration: none;
+}
+.btn-bartact:hover {
+  background: #3d8a3d;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(45,106,45,.55);
+}
+
+/* "Our Brand" badge inline in the rank line */
+.bartact-house-badge {
+  display: inline-block;
+  background: #2d6a2d;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: .7rem;
+  font-weight: 700;
+  padding: .18em .65em;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  vertical-align: middle;
+  margin-left: .6em;
+}
+
+/* Featured card for Bartact — green border treatment */
+.card-bartact {
+  background: var(--bg-card);
+  border-left: 4px solid #2d6a2d;
+  border-top: 1px solid rgba(45,106,45,.28);
+  border-right: 1px solid rgba(45,106,45,.14);
+  border-bottom: 1px solid rgba(45,106,45,.14);
+  border-radius: var(--radius);
+  padding: 1.8rem;
+  margin-bottom: 1.6rem;
+  position: relative;
+  transition: transform .15s, box-shadow .2s;
+}
+.card-bartact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(0,0,0,.45);
+}
+.card-bartact h3 { margin-top: 0; }
+.card-bartact .rank {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4caf50;
+  text-transform: uppercase;
+  margin-bottom: .4em;
+}
+
+/* Bartact featured strip on homepage */
+.bartact-feature {
+  background: linear-gradient(135deg, rgba(45,106,45,.18) 0%, rgba(45,106,45,.06) 100%);
+  border: 1px solid rgba(45,106,45,.3);
+  border-left: 4px solid #2d6a2d;
+  border-radius: var(--radius);
+  padding: 2rem 2rem 1.8rem;
+  margin-bottom: 2rem;
+}
+.bartact-feature h2 {
+  margin-top: .2em;
+  color: #fff;
+}
+.bartact-feature p {
+  max-width: 720px;
+  opacity: .9;
+}
+.bartact-feature-ctas {
+  display: flex;
+  gap: .8em;
+  flex-wrap: wrap;
+  margin-top: 1.2em;
+  align-items: center;
+}
+
+/* Mobile: full-width Bartact button */
+@media (max-width: 768px) {
+  .btn-bartact {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    font-size: 1rem;
+  }
+  .bartact-feature-ctas {
+    flex-direction: column;
+    gap: .6em;
+  }
+  .bartact-feature-ctas .btn {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+}
